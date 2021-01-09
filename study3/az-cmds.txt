@@ -1,0 +1,4 @@
+az deployment group create `
+  --name blanktemplate `
+  --resource-group az204template3 `
+  --template-file azuredeploy.json
