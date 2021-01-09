@@ -1,4 +1,5 @@
-az deployment group create `
-  --name blanktemplate `
-  --resource-group az204study3 `
-  --template-file azuredeploy.json
+az deployment group create \
+  --name addnameparameter \
+  --resource-group az204study3 \
+  --template-file $templateFile \
+  --parameters storageName={your-unique-name}
