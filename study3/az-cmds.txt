@@ -1,5 +1,7 @@
-az deployment group create \
-  --name addnameparameter \
-  --resource-group az204study3 \
-  --template-file $templateFile \
-  --parameters storageName={your-unique-name}
+// command line to run inside powershell
+
+az deployment group create `
+  --name addoutputs `
+  --resource-group az204study3 `
+  --template-file azuredeploy.json `
+  --parameters storagePrefix=store storageSKU=Standard_LRS
